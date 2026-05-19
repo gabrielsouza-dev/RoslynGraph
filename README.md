@@ -49,7 +49,7 @@ var graphEngine = new GraphEngine(solutionPath);
 
 await graphEngine.FullScan();
 
-result = await graphEngine.Search(id);
+var result = await graphEngine.Search(id);
 
 JsonHandler.PrintJson(result);
 ```
