@@ -1,7 +1,8 @@
-﻿using RoslynGraph.Core;
-using RoslynGraph.Interfaces;
+﻿using RoslynGraph.Interfaces;
+using RoslynGraph.Models.Graph;
 using RoslynGraph.Models.Graph.Edges;
 using RoslynGraph.Models.Graph.Nodes;
+using RoslynGraph.Plugins.SemanticGraph.Utils;
 using RoslynGraph.Utils;
 
 var pathArg = args.FirstOrDefault(a => a.StartsWith("-p=") || a.StartsWith("--path="));
@@ -18,7 +19,8 @@ Console.WriteLine("║ search         → buscar no grafo     ║");
 Console.WriteLine("║ exit           → sair                ║");
 Console.WriteLine("╚══════════════════════════════════════╝");
 
-IGraphEngine graphEngine = new GraphEngine(solutionPath);
+IGraphEngine graphEngine = GraphEngineFactory.Create(solutionPath)
+                                             ;//.AsSemanticGraph(solutionPath);
 var input = string.Empty;
 do
 {

@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis.MSBuild;
 using RoslynGraph.Extensions;
 using RoslynGraph.Interfaces;
+using RoslynGraph.Models.Graph;
 using RoslynGraph.Models.Graph.Edges;
 using RoslynGraph.Models.Graph.Nodes;
 using RoslynGraph.Utils;

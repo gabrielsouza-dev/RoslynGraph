@@ -1,6 +1,7 @@
 ﻿using RoslynGraph.Models.Graph.Edges;
+using RoslynGraph.Models.Graph.Nodes;
 
-namespace RoslynGraph.Models.Graph.Nodes;
+namespace RoslynGraph.Models.Graph;
 
 public interface IGraph<TNode, TEdge>
     where TNode : INode

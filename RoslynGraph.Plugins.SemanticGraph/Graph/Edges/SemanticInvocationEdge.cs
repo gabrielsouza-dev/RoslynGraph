@@ -1,4 +1,6 @@
-﻿namespace RoslynGraph.Models.Graph.Edges;
+﻿using RoslynGraph.Models.Graph.Edges;
+
+namespace RoslynGraph.Plugins.SemanticGraph.Graph.Edges;
 
 public class SemanticInvocationEdge : IEdge
 {

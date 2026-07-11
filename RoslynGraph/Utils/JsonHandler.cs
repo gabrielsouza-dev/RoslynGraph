@@ -1,4 +1,5 @@
-﻿using RoslynGraph.Models.Graph.Edges;
+﻿using RoslynGraph.Models.Graph;
+using RoslynGraph.Models.Graph.Edges;
 using RoslynGraph.Models.Graph.Nodes;
 using System.Text.Json;
 using System.Text.Json.Serialization;

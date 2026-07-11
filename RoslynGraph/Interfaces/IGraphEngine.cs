@@ -1,4 +1,4 @@
-﻿using RoslynGraph.Models.Graph.Nodes;
+﻿using RoslynGraph.Models.Graph;
 
 namespace RoslynGraph.Interfaces;
 

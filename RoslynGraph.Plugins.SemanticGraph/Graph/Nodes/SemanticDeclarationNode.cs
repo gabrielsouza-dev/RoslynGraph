@@ -1,8 +1,9 @@
 ﻿using Microsoft.CodeAnalysis;
 using RoslynGraph.Models.Enums;
+using RoslynGraph.Models.Graph.Nodes;
 using System.Text.Json.Serialization;
 
-namespace RoslynGraph.Models.Graph.Nodes;
+namespace RoslynGraph.Plugins.SemanticGraph.Graph.Nodes;
 
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "nodeType")]
 [JsonDerivedType(typeof(SemanticClassDeclarationNode), "semantic-class")]

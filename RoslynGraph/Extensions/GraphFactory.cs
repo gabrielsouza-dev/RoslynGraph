@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using RoslynGraph.Core;
+using RoslynGraph.Models.Graph;
 using RoslynGraph.Models.Graph.Edges;
 using RoslynGraph.Models.Graph.Nodes;
 
